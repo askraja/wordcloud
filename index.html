@@ -16,7 +16,7 @@
     console.log( "ready!" );
     var word_list = new Array();
 
-        var api = "https://gist.githubusercontent.com/anonymous/f21208f53dc7846e8d1f07fda46a18f0/raw/faa7789704a5b0d9355bd6c72a54f5616449ab53/file.json";
+        var api = "https://gist.githubusercontent.com/karthequian/a1fbc7dcb47a858dc7161f37bff47ff2/raw/c39e5571d4574edfe0c8814c568821e110b26c1d/file.json";
         $.getJSON(api)
           .done(function( data ) {
             console.log("Done");
@@ -26,8 +26,6 @@
           });
         $("#wordcloud").jQCloud(word_list);
       })
-    .success(function() { console.log("second success"); })
-    .error(function() { console.log("error"); })
     .complete(function() { console.log("complete"); });
     });
     </script>
